@@ -1,4 +1,4 @@
-# **Email Spam Filtering: An Implementation with Python and Scikit-learn**
+# **Email Spam Filtering: Implementation with Python and Scikit-learn**
 
 Spam filtering is a document classification task which involves classifying an email as spam or non-spam (a.k.a. ham) mail. Spam box in your Gmail account is the best example of this.
 
@@ -6,5 +6,9 @@ The Dataset used in training the model can be found [here](https://www2.aueb.gr/
 
 ## Steps taken to building the Spam_filtering model
 
-1. 
+1. Preparing the text data
+2. Creating Word List
+3. Feature Extraction
+4. Training the Classifier
 
+### **1. Preparing the text data**
