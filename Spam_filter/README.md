@@ -12,3 +12,5 @@ The Dataset used in training the model can be found [here](https://www2.aueb.gr/
 4. Training the Classifier
 
 ### **1. Preparing the text data**
+A random sample of 8000 email files is selected from the total number of email files to prevent the RAM from running out of memory during computation. Each email file contains messages. Text cleaning was performed on the messages using a function called "format_email_to_messages". Text cleaning involved dropping punctuation marks from words, remove words which are not very meaningful in deciding whether a message is a spam or not (words with length less than or equal to 2), lemmatization to avoid having words and its inflected forms as different words. The important words from the messages in each email were returned as a list of strings when passed to the function.
+
