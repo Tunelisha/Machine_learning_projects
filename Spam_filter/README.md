@@ -8,7 +8,7 @@ The Dataset used in training the model can be found [here](https://www2.aueb.gr/
 
 1. Preparing the text data
 2. Creating Total-Word List
-3. Feature Extraction
+3. Feature Extraction Process
 4. Training the Classifier
 5. Checking Performance
 
@@ -17,11 +17,11 @@ A random sample of 8000 email files was selected from the total number of email 
 
 A Target label List was also created with value 1 if message is spam and value 0 if it is not spam by checking for "spam" and "ham" in each emails file's name.
 
-### **2. Creating Total-Word List**
-A List was created containing all the possible words in the email files without duplicates. This List was used for feature extraction.
+### **2. Creating a set of Total-Words**
+A Set was created containing all the possible words in the email files without duplicates. This List was used for feature extraction.
 
 ### **3. Feature Extraction Process**
-The next stage was feature extraction. A word Count Vector function was created by comparing each word in the Total-word List with the words in each message (list of strings). If the word exist in the message, the frequecy of such word in the message is returned, else it returns zero. 
+The next stage was feature extraction. A word Count Vector function was created by comparing each word in the Total-word Set with the words in each message (list of strings). If the word exist in the message, the frequecy of such word in the message is returned, else it returns zero. 
 
 ### **4. Training the Classifier**
 Here I used Scikit-learn ML library to train Naive Bayes Classifier. The Dataset (The word count vector features and target Label) was split into training data and test data in the ratio 70:30 and the training data was used to train Naive Bayes classifier. Naive Bayes classifier is a conventional and very popular method for document classification problem. It is a supervised probabilistic classifier based on Bayes theorem assuming independence between every pair of features. 
