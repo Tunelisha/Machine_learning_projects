@@ -1,1 +1,1 @@
-# **This Repository contains Machine Projects I have worked on**
+# **This Repository contains Machine Learning Projects I have worked on**
